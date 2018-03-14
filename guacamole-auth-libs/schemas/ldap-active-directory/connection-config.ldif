@@ -1,0 +1,24 @@
+DN: CN=DWH,OU=guac_RDP_Connections,OU=Hosting,OU=Main,DC=infinity,DC=lab
+changetype: add
+CN: DWH
+objectClass: guacConfigGroup
+guacConfigProtocol: rdp
+guacConfigParameter: hostname=10.154.71.180
+guacConfigParameter: port=3389
+guacConfigParameter: username=${GUAC_USERNAME}
+guacConfigParameter: password=${GUAC_PASSWORD}
+guacConfigParameter: domain=infinity.lab
+member: CN=Gilad Gavze,OU=MS_Users,OU=Hosting,OU=Main,DC=my,DC=domain
+
+
+DN: CN=TERMINAL,OU=guac_RDP_Connections,OU=Hosting,OU=Main,DC=infinity,DC=lab
+changetype: add
+CN: TERMINAL
+objectClass: guacConfigGroup
+guacConfigProtocol: rdp
+guacConfigParameter: hostname=10.154.70.177
+guacConfigParameter: port=3389
+guacConfigParameter: username=${GUAC_USERNAME}
+guacConfigParameter: password=${GUAC_PASSWORD}
+guacConfigParameter: domain=infinity.lab
+member: CN=Gilad Gavze,OU=MS_Users,OU=Hosting,OU=Main,DC=my,DC=domain
